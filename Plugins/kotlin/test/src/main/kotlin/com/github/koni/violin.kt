@@ -24,7 +24,7 @@ import java.util.concurrent.ThreadLocalRandom
 import kotlin.system.exitProcess
 
 @AliucordPlugin
-class Skull : Plugin() {
+class violin : Plugin() {
     private var observable: Subscription? = null
     override fun start(ctx: Context) {
         patcher.after<StoreMessageReactions>(
@@ -41,7 +41,7 @@ class Skull : Plugin() {
             val message = Message(this)
             val content = message.content.lowercase()
             if (message.channelId != StoreStream.getChannelsSelected().id) return@subscribe
-            if (content.contains("💀") || content.contains("skull")) funny()
+            if (content.contains("🎻") || content.contains("violin")) funny()
         }
 
     }

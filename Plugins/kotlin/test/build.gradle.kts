@@ -1,5 +1,5 @@
 version = "1.0.0" // Plugin version. Increment this to trigger the updater
-description = "ItzOnlyAnimal's Moyai plugin but for skull" // Plugin description that will be shown to user
+description = "ItzOnlyAnimal's Moyai plugin but for the gordon ramsay waterphone sound" // Plugin description that will be shown to user
 
 aliucord {
     // Changelog of your plugin

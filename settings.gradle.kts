@@ -5,7 +5,7 @@ rootProject.name = "aliuplugins"
 
 // Plugins are included like this
 include(
-    "Skull"
+    "violin"
 )
 
 // This is required because plugins are in the ExamplePlugins/kotlin subdirectory.

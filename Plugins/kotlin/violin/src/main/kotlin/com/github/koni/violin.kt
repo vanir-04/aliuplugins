@@ -56,7 +56,7 @@ class violin : Plugin() {
                             .setUsage(AudioAttributes.USAGE_MEDIA)
                             .build()
                     )
-                    setDataSource("https://raw.githubusercontent.com/vanir-04/test-repo/main/files/damndaniel.m4a")
+                    setDataSource("https://raw.githubusercontent.com/vanir-04/aliuplugins/main/waterphone.mp3")
                     prepare()
                     start()
                 }

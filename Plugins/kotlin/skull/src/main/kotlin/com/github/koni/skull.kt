@@ -24,7 +24,7 @@ import java.util.concurrent.ThreadLocalRandom
 import kotlin.system.exitProcess
 
 @AliucordPlugin
-class violin : Plugin() {
+class skull : Plugin() {
     private var observable: Subscription? = null
     override fun start(ctx: Context) {
         patcher.after<StoreMessageReactions>(
@@ -32,7 +32,7 @@ class violin : Plugin() {
             MessageReactionUpdate::class.java
         ) {
             val r = it.args[0] as MessageReactionUpdate
-            if (r.b().d() != "\uD83C\uDFBB") return@after
+            if (r.b().d() != "\uD83D\uDC80") return@after
             if (r.a() != StoreStream.getChannelsSelected().id) return@after
             funny()
         }
@@ -41,7 +41,7 @@ class violin : Plugin() {
             val message = Message(this)
             val content = message.content.lowercase()
             if (message.channelId != StoreStream.getChannelsSelected().id) return@subscribe
-            if (content.contains("🎻") || content.contains("violin")) funny()
+            if (content.contains("💀") || content.contains("skull")) funny()
         }
 
     }
@@ -56,7 +56,7 @@ class violin : Plugin() {
                             .setUsage(AudioAttributes.USAGE_MEDIA)
                             .build()
                     )
-                    setDataSource("https://raw.githubusercontent.com/vanir-04/aliuplugins/main/waterphone.mp3")
+                    setDataSource("https://raw.githubusercontent.com/vanir-04/aliuplugins/main/damndaniel.m4a")
                     prepare()
                     start()
                 }
